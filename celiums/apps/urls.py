@@ -26,4 +26,6 @@ urlpatterns = [
     path('loginview/', loginview, name="loginview"),
     path('loginform/', loginform, name="loginform"),
     path('messege_send/', messege_send, name="messege_send"),
+    path('seller_regv/', seller_regv, name="seller_regv"),
+    path('seller_reg/', seller_reg, name="seller_reg"),
 ]
