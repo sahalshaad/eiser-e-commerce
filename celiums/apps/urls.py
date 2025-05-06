@@ -19,8 +19,8 @@ from django.urls import include, path
 from apps.views import *
 
 urlpatterns = [
-    path('index/<id>/', index, name="index"),
-    path('contact/<id>/', contact, name="contact"),
+    path('index/', index, name="index"),
+    path('contact/', contact, name="contact"),
     path('signupview/', signupview, name="signupview"),
     path('signupform/', signupform, name="signupform"),
     path('loginview/', loginview, name="loginview"),
@@ -28,4 +28,6 @@ urlpatterns = [
     path('messege_send/', messege_send, name="messege_send"),
     path('seller_regv/', seller_regv, name="seller_regv"),
     path('seller_reg/', seller_reg, name="seller_reg"),
+    path('add_product_view/', add_product_view, name="add_product_view"),
+    path('add_product/', add_product, name="add_product"),
 ]

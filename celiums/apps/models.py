@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.timezone import now
 # Create your models here.
 class Login(models.Model):
-    email = models.CharField(max_length=100)
+    email = models.CharField(max_length=100, unique=False)
     password = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
     
